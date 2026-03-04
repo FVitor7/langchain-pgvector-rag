@@ -7,7 +7,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Semantic search system powered by **LangChain, PostgreSQL (pgVector) and Gemini/OpenAI**.
+Semantic search system powered by **LangChain, PostgreSQL (pgVector) and Gemini**.
 
 This project implements a complete **Retrieval-Augmented Generation (RAG)** pipeline capable of ingesting a PDF document, storing embeddings in PostgreSQL with pgVector, and answering questions strictly based on the document content via CLI.
 
@@ -42,7 +42,7 @@ flowchart TD
     H --> E
     H --> I[Retrieve Top Chunks]
     I --> J[Prompt Template]
-    J --> K[LLM Gemini / OpenAI]
+    J --> K[LLM Gemini]
     K --> L[Answer Returned to CLI]
 ```
 
