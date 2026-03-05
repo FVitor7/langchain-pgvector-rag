@@ -131,11 +131,12 @@ Create `.env` based on `.env.example`
 Example:
 
 ```
-DATABASE_URL=postgresql+psycopg://user:password@localhost:5432/ragdb
-PG_VECTOR_COLLECTION_NAME=pdf_documents
 GOOGLE_API_KEY=your_google_key
 GOOGLE_EMBEDDING_MODEL=models/embedding-001
-PDF_PATH=document.pdf
+GOOGLE_CHAT_MODEL='gemini-2.5-flash-lite'
+DATABASE_URL=postgresql+psycopg://postgres:postgres@localhost:5432/rag
+PG_VECTOR_COLLECTION_NAME=company_revenue_rag
+PDF_PATH=./data/pdf/document.pdf
 ```
 
 ---
